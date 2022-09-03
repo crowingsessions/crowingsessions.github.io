@@ -1,4 +1,13 @@
-var speakers = [
+var speakers = [  
+  {
+    "name": "António Lopes",
+    "slug": "antonio-lopes",
+    "country": "pt",
+    "position": "Software Engineer",
+    "company": "MD3",
+    "description": "",
+    "contacts": []
+  },
   {
     "name": "Gonçalo Dias",
     "slug": "goncalo-dias",
@@ -125,15 +134,6 @@ var speakers = [
         "type": "linkedin"
       }
     ]
-  },
-  {
-    "name": "António Lopes",
-    "slug": "antonio-lopes",
-    "country": "pt",
-    "position": "Software Engineer",
-    "company": "MD3",
-    "description": "",
-    "contacts": []
   },
 ];
 
