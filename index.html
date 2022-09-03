@@ -29,7 +29,7 @@
         <div class="container d-flex justify-content-between align-items-center">
           <div class="d-flex flex-column nav-bar--brand--div">
             <figure class="nav-bar--brand">
-              <img src="assets/images/brand.png">
+              <img class="crow--the--singer" src="assets/images/brand.png">
             </figure>
           </div>
         
@@ -57,19 +57,19 @@
           <p>What makes us different from other projects like this? Nothing! And to be honest that's not at the goal all.</p>
           <p>
             <b>Our goals?</b> 
-            <p>Simply: create network(s) of people(s); share knowledge that can/may/could help us to improve ourselves or our companies or our communities or even the world (hmmmmm); show that IT (such a buzzz word) is not just lines of code, coffe, cigars, internet and robots; learn new things; and finally have a fun, nice, good and relaxing time.</p>
+            <p>Create network(s) of people(s); share knowledge that can/may/could help to improve ourselves or our companies or our communities or even the world (hmm hmm hmm); show that IT (such a buzzz word) is not just lines of code, coffee, cigars, internet and robots; learn new things; and finally have a fun, nice, good and relaxing time.</p>
           </p>
           <p>
             <b>How this works?</b> 
-            <p>As said before nothing special (you will found a lot of places doing this) and there are two aways: remote and presencial.</p>
-            <p>For the remote way, is more or less like simple and informal "live podcast" where we invite a guest to talks subject and after that there's a debate/discussion/question if the audience is up to it of course (nothing is mandatory, people are free and motivated to do so) :)</p>
-            <p>If presencial, the structure is similar to remote but there's an advantage... we provide pizza, beer, bananas, peanut butter and that goodies that you like so much :P</p>
+            <p>As said before nothing special (you will found a lot of places doing this) and it can work in two modes: remote or presencial.</p>
+            <p>Remote mode: is more or less a simple and informal "live podcast" where we invite a guest to talk about a specific subject and after that there's a debate/discussion/question if the audience is willing to participate of course (nothing is mandatory, people are free and motivated to do so) :)</p>
+            <p>Presencial mode: structure is similar to remote but there's an advantage... we provide pizza, beer, bananas, peanut butter and that goodies that you like so much :P</p>
           </p>
           <p>
             <b>How did this starts?</b>
-            <p>Start in 2018, in a small company, in a small city - Leiria - because it was missing a "safe" place for the tech geeks to share their knowledge, frustrations, problems, etc... </p> 
-            <p>We start by doing the regular "meet ups" (it's a brand so word needs to be split) but after two years the pandemic appear and we had to change the game. In the end it turns out to be good because we could reach more people.</p>
-            <p>The remote sessions start as "Geek sessions" and as an internal - if you want <a href="https://www.md3.pt/pt/about-the-geek-sessions/">check more in here</a> - but since the name is used by a lot of people it was changed to Crowing Sessions</p>
+            <p>Start in 2018, in a small company, in a small city - <a href="https://www.visiteleiria.pt/en/home/">Leiria, Portugal</a> - because it was missing a "safe" place for the tech geeks to share their knowledge, frustrations, problems, etc... </p> 
+            <p>We start by doing the regular "meet ups" (it's a brand so word needs to be split) but after two years, pandemic appear and... we had to change the game. In the end, turns out to be good because we could reach more people in a more confortable way.</p>
+            <p>Remote sessions start as "Geek sessions" and as an internal project - if you want <a href="https://www.md3.pt/pt/about-the-geek-sessions/">check more in here</a> - but since this name is broadly used by a lot of people/groups/companies we decided to changed to <b>Crowing Sessions</b>, in "homage" to Leiria city symbol and because "crow" is also a representation of wisdom and vision.</p>
           </p>
         </section>
       </article>
@@ -139,6 +139,10 @@
         $(".nav--item").removeClass("active");
         $(".nav--item[data-main='mainSpeakersElement'").addClass("active");
         document.title = "Crowing sessions - Speakers";
+      });
+
+      $(".crow--the--singer").on("click", function() {
+        $("#audioCrow")[0].play();
       });
     </script>
   </body>

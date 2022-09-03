@@ -141,3 +141,7 @@ html {
   color: white;
   background: black;
 }
+
+.crow--the--singer:hover {
+  cursor: pointer;
+}
