@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Crowing sessions</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- our css -->
+    <link rel="stylesheet" href="assets/main.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- our scripts -->
+    <script src="data/speakers.js"></script>
+    <script src="data/sessions.js"></script>
+  </head>
+  <body>
+    <audio muted id="audioCrow"><source src="assets/sound.mp3"><source src="sound.ogg"></audio>    
+    <header id="mainHeader">
+      <div id="mainHeaderDiv" class="fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="d-flex flex-column nav-bar--brand--div">
+            <figure class="nav-bar--brand">
+              <img src="assets/images/brand.png">
+            </figure>
+          </div>
+        
+          <nav class="nav">
+            <a class="nav-link nav--item" data-main="mainAboutElement" title="About" href="#about">About</a>
+            <a class="nav-link nav--item" data-main="mainSessionsElement" title="Sessions" href="#sessions">Sessions</a>
+            <a class="nav-link nav--item" data-main="mainSpeakersElement" title="Speakers" href="#speakers">Speakers</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="mainLandingElement" class="container mt-5 main--element active justify-content-center">
+      <article class="d-flex flex-column align-items-center">
+        <h1 class="huge-title" title="crowing sessions">CROWING SESSIONS</h1>
+        <figure id="landingBrandDiv">
+          <img src="assets/images/brand.png">
+        </figure>
+      </article>
+    </main>
+    <main id="mainAboutElement" class="container mt-5 main--element">
+      <article id="aritcle-about-us">
+        <h2>About us</h2>
+        <section>
+          <p>Just a small group of people that like to share knowlodge about (in)direct subjects related with IT.</p>
+          <p>What makes us different from other projects like this? Nothing! And to be honest that's not at the goal all.</p>
+          <p>
+            <b>Our goals?</b> 
+            <p>Simply: create network(s) of people(s); share knowledge that can/may/could help us to improve ourselves or our companies or our communities or even the world (hmmmmm); show that IT (such a buzzz word) is not just lines of code, coffe, cigars, internet and robots; learn new things; and finally have a fun, nice, good and relaxing time.</p>
+          </p>
+          <p>
+            <b>How this works?</b> 
+            <p>As said before nothing special (you will found a lot of places doing this) and there are two aways: remote and presencial.</p>
+            <p>For the remote way, is more or less like simple and informal "live podcast" where we invite a guest to talks subject and after that there's a debate/discussion/question if the audience is up to it of course (nothing is mandatory, people are free and motivated to do so) :)</p>
+            <p>If presencial, the structure is similar to remote but there's an advantage... we provide pizza, beer, bananas, peanut butter and that goodies that you like so much :P</p>
+          </p>
+          <p>
+            <b>How did this starts?</b>
+            <p>Start in 2018, in a small company, in a small city - Leiria - because it was missing a "safe" place for the tech geeks to share their knowledge, frustrations, problems, etc... </p> 
+            <p>We start by doing the regular "meet ups" (it's a brand so word needs to be split) but after two years the pandemic appear and we had to change the game. In the end it turns out to be good because we could reach more people.</p>
+            <p>The remote sessions start as "Geek sessions" and as an internal - if you want <a href="https://www.md3.pt/pt/about-the-geek-sessions/">check more in here</a> - but since the name is used by a lot of people it was changed to Crowing Sessions</p>
+          </p>
+        </section>
+      </article>
+      <article id="aritcle-about-sponsors">
+        <h2>Sponsors</h2>
+        <section>
+          Main sponsor : <a href="https://www.md3.pt/" target="_blank">MD3 - Digital, Design and Development</a></span>          
+        </section>
+          All sessions : <a href="https://www.mediatree.fr/" target="_blank">Mediatree - Innovateur de veille audiovisuelle</a> <br/>
+          On the two elastic sessions : <a href="https://www.elastic.co/" target="_blank">Elastic</a>
+        </section>
+      </article>
+      <article id="aritcle-contacts">
+        <h2>Contacts</h2>
+        <section>
+          If you have any questions or sugestions : <a href="mailto:crowing.sessions@gmail.com&subject=Questions and sugestions&body=Crowww">don't be shy just send us an email!</a>
+        </section>
+      </article>
+    </main>
+    <main id="mainSessionsElement" class="container mt-5 main--element"></main>    
+    <main id="mainSpeakersElement" class="container mt-5 main--element"></main>
+
+    <script>
+      $(window).scroll(function() {     
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+          $("#mainHeaderDiv").addClass("scrolled");
+        } else {
+          $("#mainHeaderDiv").removeClass("scrolled");
+        }
+      });
+
+      $(".nav--item").on("click", function() {
+        $(".main--element").removeClass("active");
+        $(".main--element[id='" + $(this).data("main") + "']").addClass("active");
+        $(".nav--item").removeClass("active");
+        $(this).addClass("active");
+        document.title = "Crowing sessions - " + $(this).attr("title");
+      });
+      
+      let playAttempt = setInterval(
+        () => {
+          $("#audioCrow")[0].play().then(
+            () => {
+              $("#audioCrow")[0].muted = false;
+              clearInterval(playAttempt);
+            }
+          )
+          .catch(
+            (error) => {console.log('Unable to play the video, User has not interacted yet.')}
+          );
+        }, 3000
+      );
+
+      prepareSpeakers();
+      prepareSessions();
+
+      $(".huge-title").animate({"opacity": 1}, 1, function() {
+        $("#landingBrandDiv").animate({"opacity": 1}, 1, function() {
+          $("#mainHeader").animate({"opacity": 1}, 1);
+        });
+      });
+
+      $(".speaker--anchor").on("click", function() {
+        $(".main--element").removeClass("active");
+        $(".main--element[id='mainSpeakersElement']").addClass("active");
+        $(".nav--item").removeClass("active");
+        $(".nav--item[data-main='mainSpeakersElement'").addClass("active");
+        document.title = "Crowing sessions - Speakers";
+      });
+    </script>
+  </body>
+</html>
