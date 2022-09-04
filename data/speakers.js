@@ -1,4 +1,4 @@
-var speakers = [  
+var speakers = [
   {
     "name": "António Lopes",
     "slug": "antonio-lopes",
@@ -28,7 +28,13 @@ var speakers = [
     "country": "pt",
     "position": "Accessibility Consultant",
     "company": "Maieuticaccess",
-    "description": "<p>PhD in Informatics at University of Trás-os-Montes e Alto Douro, Master in Informatics and Mobile Computing by the School of Technology and Management of the Polytechnic Institute of Leiria, and Bachelor in Informatics Engineering by the same school.</p><p>João focuses his research work on digital accessibility motivated by the idea that for people with disabilities, technology isn't just a facilitator, it is the thing that makes it possible. That's why he thinks his work is as broad as possible and merge it with mainstream research and software development.</p><p>Since 2020, he's been working as an Accessibility Consultant at Maieutic Access and from December of 2015 to the Present date, he's a research fellow at Institute for Systems and Computer Engineering, Technology and Science (INESC TEC), funded by Fundação para a Ciência e a Tecnologia, Portugal.</p><p>His knowledge goes from the security of information (data transmission, data storage and digital certificates), programming languages (C, PHP, C#.net, Java, HTML, SQL, among others), and databases to Informatics' Networks. </p><p>João has also several publications regarding usability, user experience, web usabilities, human-machine interaction, design thinking, ergonomics, augmented reality. Curious? </p>",
+    "description": `
+      <p>PhD in Informatics at University of Trás-os-Montes e Alto Douro, Master in Informatics and Mobile Computing by the School of Technology and Management of the Polytechnic Institute of Leiria, and Bachelor in Informatics Engineering by the same school.</p>
+      <p>Focuses his research work on digital accessibility motivated by the idea that for people with disabilities, technology isn't just a facilitator, it is what makes it possible. That's why he thinks his work is as broad as possible and merges it with mainstream research and software development.</p>
+      <p>Since 2020, he's been working as an Accessibility Consultant at Maieutic Access and from December of 2015 to the Present date, as a researcher at Institute for Systems and Computer Engineering, Technology and Science (INESC TEC), funded by Fundação para a Ciência e a Tecnologia, Portugal.</p>
+      <p>His knowledge goes from security of information (data transmission, data storage and digital certificates), programming languages (C, PHP, C#.net, Java, HTML, SQL, among others), databases to Informatics' Networks.</p>
+      <p>He also has several publications about usability, user experience, web usability, human-machine interaction, design thinking, ergonomics, augmented reality.</p>
+    `,
     "contacts": [
       {
         "type": "url",
@@ -127,7 +133,13 @@ var speakers = [
     "country": "pt",
     "position": "Documentary Linguistic",
     "company": "",
-    "description": "<p>Vera is a trained linguist with a background in language documentation and field research. Her main research interests lie in European endangered languages and in the connection between documentary data and language revitalisation. </p><p>Vera Ferreira fell in love with Minderico, a language spoken in Minde, municipality of Alcanena, about 20 years ago. Born in Batalha, Leiria, many years ago, her father went to work for Minde and brought her a small book with a few words in Minderico. Since then, she tried to learn and investigate more about the language. Minderico was the main reason why she specialized in endangered language documentation.</p><p>Nowadays, she is head of the Interdisciplinary Centre for Social and Language Documentation (<a href=\"http://www.cidles.eu/\">CIDLeS</a>) and Archive Support and Development Officer at the Endangered Languages Archive (<a href=\"https://www.elararchive.org/\">SOAS University of London</a>). </p><p>As the digital archivist, Vera provides advice and training on all aspects of data management, metadata preparation and digital archiving.</p><p>Vera is co-founder and Head of CIDLes, a non-profit institution founded in January 2010 in Minde (Portugal) by a group of national and international researchers. </p><blockquote><p>The Interdisciplinary Centre for Social and Language Documentation (CIDLeS) aims to improving and deepening research in two linguistic areas: language documentation and linguistic typology. Besides the documentation, study and dissemination of European endangered and minority languages CIDLeS is also engaged in the development of language technologies for scientific and didactic work on lesser-used languages. </p><cite>From http://cidleseu.de13.fcomet.com/our-mission/mission-statement/ <br></cite></blockquote><p>As Digital Archivist, at SOAS University of London, Vera manages the full project lifecycle of language documentation materials at the archive end (ingestion, evaluation and processing of materials and formats, curation, upload, access setting, catalogue display). She also diagnoses and troubleshoot problems with data and metadata, reviews and approves data management plans, prepares and administrate legal documentation around deposits, organises and trains lexicography and semantics, video conversion, linguistic and metadata software (e.g. ELAN, FLEx, Arbil, CMDI Maker), metadata and data management workflows, and digital archiving. </p>",
+    "description": `
+      <p>Trained linguist with a background in language documentation and field research. Her main research interests lie in European endangered languages and in the connection between documentary data and language revitalisation.</p>
+      <p>Fell in love with Minderico, a language spoken in Minde, municipality of Alcanena, about 20 years ago. Born in Batalha, Leiria, many years ago, her father went to work for Minde and brought her a small book with a few words in Minderico. Since then, she has tried to learn and investigate more about the language. Minderico was the main reason why she specialised in endangered language documentation.</p>
+      <p>Nowadays, is head Archive Support and Development Officer at the Endangered Languages Archive (<a href="https://www.elararchive.org/" target="_blank">SOAS University of London</a>) and co-found and head of the Interdisciplinary Centre for Social and Language Documentation (<a href="http://www.cidles.eu/" target="_blank">CIDLeS</a>) - a non-profit institution founded in January 2010 in Minde (Portugal) by a group of national and international researchers.</p>
+      <blockquote><p>The Interdisciplinary Centre for Social and Language Documentation (CIDLeS) aims to improve and deepen research in two linguistic areas: language documentation and linguistic typology. Besides the documentation, study and dissemination of European endangered and minority languages, CIDLeS is also engaged in the development of language technologies for scientific and didactic work on lesser-used languages.</p><cite>From http://cidleseu.de13.fcomet.com/our-mission/mission-statement/ <br></cite></blockquote>
+      <p>As Digital Archivist, at SOAS University of London, she manages the full project lifecycle of language documentation materials at the archive end (ingestion, evaluation and processing of materials and formats, curation, upload, access setting, catalogue display). Also diagnoses and troubleshoot problems with data and metadata, reviews and approves data management plans, prepares and administrate legal documentation around deposits, organises and trains lexicography and semantics, video conversion, linguistic and metadata software (e.g. ELAN, FLEx, Arbil, CMDI Maker), metadata and data management workflows, and digital archiving.</p>
+    `,
     "contacts": [
       {
         "url": "https://pt.linkedin.com/in/vera-ferreira",
@@ -143,14 +155,12 @@ var speakers = [
 function prepareSpeakers() {
   var mainSpeakersObj = $("#mainSpeakersElement");
   var countries = { "pt": "Portugal", "fr": "France", "en": "England", "es": "Spain" };
-  var linkedinIconObj = $("<object>").attr({ "type": "image/svg+xml", "data": "assets/icons/linkedin.svg" });
-  var urlIconObj = $("<object>").attr({ "type": "image/svg+xml", "data": "assets/icons/link-45deg.svg" });
 
   $.each(speakers, function (idx, speaker) {
     var article = $("<article>").attr("id", "speaker-article-" + speaker.slug).appendTo(mainSpeakersObj).addClass("speaker--anchor--point");
     var span = $("<span>");
     var spanName = span.clone().text(speaker.name);
-    var spanCountry = span.clone().text(countries[speaker.country]).addClass("speaker-country")
+    var spanCountry = $("<h6>").text(countries[speaker.country]).addClass("speaker-country");
     var articleTitle = $("<h3>").attr("title", speaker.name);
     articleTitle.append(spanName).append(spanCountry).appendTo(article);
 

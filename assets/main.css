@@ -125,6 +125,10 @@ html {
   margin-top: 10px;        
 }
 
+.speaker--section--description {
+  margin-top: 10px;
+}
+
 .session--section--links > a {
   margin-right: 16px;
 }
@@ -144,4 +148,8 @@ html {
 
 .crow--the--singer:hover {
   cursor: pointer;
+}
+
+blockquote {
+  margin: 16px;
 }

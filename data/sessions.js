@@ -1,4 +1,4 @@
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 var sessions = [
   {
     "type": "normal",
@@ -114,8 +114,6 @@ var sessions = [
  */
 function prepareSessions() {
   var mainSessionsObj = $("#mainSessionsElement");
-  var urlIconObj = $("<object>").attr({ "type": "image/svg+xml", "data": "assets/icons/link-45deg.svg" });
-  var youtubeIconObj = $("<object>").attr({ "type": "image/svg+xml", "data": "assets/icons/youtube.svg" });
 
   $.each(sessions, function (idx, session) {
     var article = $("<article>").attr("id", "sessions-article-" + session.slug).appendTo(mainSessionsObj);
@@ -133,7 +131,7 @@ function prepareSessions() {
 
       $.each(session.links, function(i, link) {
         if (link.type == "youtube") {
-          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank" }).append($("<span>").text(link.name)).prepend(youtubeIconObj.clone()));
+          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "rel": "nofollow" }).append($("<span>").text(link.name)).prepend(youtubeIconObj.clone()));
         } else {
           sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank" }).append($("<span>").text(link.name)).prepend(urlIconObj.clone()));
         }

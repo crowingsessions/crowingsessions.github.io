@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <!-- our scripts -->
+    <script src="data/common.js"></script>
     <script src="data/speakers.js"></script>
     <script src="data/sessions.js"></script>
   </head>
@@ -34,9 +35,9 @@
           </div>
         
           <nav class="nav">
-            <a class="nav-link nav--item" data-main="mainAboutElement" title="About" href="#about">About</a>
-            <a class="nav-link nav--item" data-main="mainSessionsElement" title="Sessions" href="#sessions">Sessions</a>
-            <a class="nav-link nav--item" data-main="mainSpeakersElement" title="Speakers" href="#speakers">Speakers</a>
+            <a class="nav-link nav--item" data-main="mainAboutElement" title="About" href="#mainAboutElement">About</a>
+            <a class="nav-link nav--item" data-main="mainSessionsElement" title="Sessions" href="#mainSessionsElement">Sessions</a>
+            <a class="nav-link nav--item" data-main="mainSpeakersElement" title="Speakers" href="#mainSpeakersElement">Speakers</a>
           </nav>
         </div>
       </div>
@@ -56,7 +57,7 @@
           <p>Just a small group of people that like to share knowlodge about (in)direct subjects related with IT.</p>
           <p>What makes us different from the others? Hm nothing... And to be honest that's not the goal.</p>
           <p>
-            <b>Our goals?</b> 
+            <b>Our goals?</b>
             <p>Create network(s) of people(s); share knowledge that can/may/could help to improve ourselves or our companies or our communities or even the world (hmm hmm hmm); show that IT (such a buzzz word) is not just lines of code, coffee, cigars, internet and robots; learn new things; and finally have a fun, nice, good and relaxing time.</p>
           </p>
           <p>
@@ -67,9 +68,9 @@
           </p>
           <p>
             <b>How did this starts?</b>
-            <p>Start in 2018, in a small company, in a small city - <a href="https://www.visiteleiria.pt/en/home/">Leiria, Portugal</a> - because it was missing a "safe" place for the tech geeks to share their knowledge, frustrations, problems, etc... </p> 
+            <p>Start in 2018, in a small company, in a small city - <a href="https://www.visiteleiria.pt/en/home/" target="_blank">Leiria, Portugal</a> - because it was missing a "safe" place for the tech geeks to share their knowledge, frustrations, problems, etc... </p> 
             <p>We start by doing the regular "meet ups" (it's a brand so word needs to be split) but after two years, pandemic appear and... we had to change the game. In the end, turns out to be good because we could reach more people in a more confortable way.</p>
-            <p>Remote sessions start as "Geek sessions" and as an internal project - if you want <a href="https://www.md3.pt/pt/about-the-geek-sessions/">check more in here</a> - but since this name is broadly used by a lot of people/groups/companies we decided to changed to <b>Crowing Sessions</b>, in "homage" to Leiria city symbol and because "crow" is also a representation of wisdom and vision.</p>
+            <p>Remote sessions start as "Geek sessions" and as an internal project - if you want <a href="https://www.md3.pt/pt/about-the-geek-sessions/" target="_blank">check more in here</a> - but since this name is broadly used by a lot of people/groups/companies we decided to changed to <b>Crowing Sessions</b>, in "homage" to Leiria city symbol and because "crow" is also a representation of wisdom and vision.</p>
           </p>
         </section>
       </article>
@@ -124,12 +125,13 @@
         }, 3000
       );
 
+      /* prepare speakers and sessions */
       prepareSpeakers();
       prepareSessions();
 
-      $(".huge-title").animate({"opacity": 1}, 1, function() {
-        $("#landingBrandDiv").animate({"opacity": 1}, 1, function() {
-          $("#mainHeader").animate({"opacity": 1}, 1);
+      $(".huge-title").animate({"opacity": 1}, 1000, function() {
+        $("#landingBrandDiv").animate({"opacity": 1}, 1000, function() {
+          $("#mainHeader").animate({"opacity": 1}, 1000);
         });
       });
 
