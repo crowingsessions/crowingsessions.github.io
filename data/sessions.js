@@ -2,7 +2,7 @@
 var sessions = [
   {
     "type": "normal",
-    "slug": "rs",
+    "slug": "g-s-4",
     "date": "2021-05-13",
     "title": "Preserving, discovering and exploring the immaterial cultural heritage in the digital era",
     "areas": ["Linguistic", "Digital era", "Cultural"],
@@ -23,7 +23,7 @@ var sessions = [
   },
   {
     "type": "normal",
-    "slug": "rs",
+    "slug": "g-s-3",
     "date": "2021-03-11",
     "title": "Accessibility on Healthy Aging",
     "areas": ["Accessibility", "Health", "Aging", "Usability"],
@@ -39,7 +39,7 @@ var sessions = [
   },
   {
     "type": "normal",
-    "slug": "rs",
+    "slug": "g-s-2",
     "date": "2021-01-27",
     "title": "Research and development of a functionality for image recognition for mobile applications",
     "areas": ["OCR", "Images"],
@@ -48,7 +48,7 @@ var sessions = [
   },
   {
     "type": "normal",
-    "slug": "rs",
+    "slug": "g-s-1",
     "date": "2020-05-27",
     "title": "Gamification",
     "areas": ["Gamification"],
@@ -70,7 +70,7 @@ var sessions = [
   },
   {
     "type": "meet",
-    "slug": "rs",
+    "slug": "m-u-3",
     "date": "2019-03-14",
     "title": "Elastic Leiria - 2nd edition",
     "thematic": "Elasticsearch",
@@ -83,7 +83,7 @@ var sessions = [
   },
   {
     "type": "meet",
-    "slug": "rs",
+    "slug": "m-u-2",
     "date": "2018-11-22",
     "title": "Python meet",
     "thematic": "Python",
@@ -95,7 +95,7 @@ var sessions = [
   },
   {
     "type": "meet",
-    "slug": "rs",
+    "slug": "m-u-1",
     "date": "2018-02-28",
     "title": "Elastic Leiria",
     "thematic": "Elasticsearch",
@@ -116,7 +116,7 @@ function prepareSessions() {
   var mainSessionsObj = $("#mainSessionsElement");
 
   $.each(sessions, function (idx, session) {
-    var article = $("<article>").attr("id", "sessions-article-" + session.slug).appendTo(mainSessionsObj);
+    var article = $("<article>").attr("id", "sessions-article-" + session.slug).appendTo(mainSessionsObj).addClass("session--anchor--point");;
     var title = $("<h2>").text(session.title).appendTo(article);
     var sessionDate = new Date(session.date);
     var sessionDateFormattedObj = $("<h4>").text(sessionDate.getDay() + " " + months[sessionDate.getMonth()] + " " + sessionDate.getFullYear()).appendTo(article);

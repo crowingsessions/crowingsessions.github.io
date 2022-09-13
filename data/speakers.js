@@ -4,7 +4,7 @@ var speakers = [
     "slug": "antonio-lopes",
     "country": "pt",
     "position": "Software Engineer",
-    "company": "MD3",
+    "company": "",
     "description": "",
     "contacts": []
   },
@@ -154,7 +154,6 @@ var speakers = [
  */
 function prepareSpeakers() {
   var mainSpeakersObj = $("#mainSpeakersElement");
-  var countries = { "pt": "Portugal", "fr": "France", "en": "England", "es": "Spain" };
 
   $.each(speakers, function (idx, speaker) {
     var article = $("<article>").attr("id", "speaker-article-" + speaker.slug).appendTo(mainSpeakersObj).addClass("speaker--anchor--point");

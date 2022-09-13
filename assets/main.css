@@ -146,10 +146,27 @@ html {
   background: black;
 }
 
+.session--anchor--point:target > h2 {
+  color: white;
+  background: black;
+}
+
 .crow--the--singer:hover {
   cursor: pointer;
 }
 
 blockquote {
   margin: 16px;
+}
+
+#article-about-sponsors > section {
+  margin-bottom: 16px;
+}
+
+#article-licence > section {
+  font-size: 11px;
+}
+
+#article-licence > section > a > img {
+  height: 20px;
 }

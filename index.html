@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Crowing sessions</title>
+    <meta name="description" content="Crowing sessions just talk about geek stuff nothing else">
+    <title title="Crowing sessions">Crowing sessions</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- our css -->
@@ -21,7 +22,8 @@
     <!-- our scripts -->
     <script src="data/common.js"></script>
     <script src="data/speakers.js"></script>
-    <script src="data/sessions.js"></script>
+    <script src="data/sessions.js"></script>    
+    <script src="data/init.js"></script>
   </head>
   <body>
     <audio muted id="audioCrow"><source src="assets/sound.mp3"><source src="sound.ogg"></audio>    
@@ -51,7 +53,7 @@
       </article>
     </main>
     <main id="mainAboutElement" class="container mt-5 main--element">
-      <article id="aritcle-about-us">
+      <article id="article-about-us">
         <h2>About us</h2>
         <section>
           <p>We are just a small group of people that like to share knowlodge about subjects directly or indirectly related with technology.</p>
@@ -65,7 +67,6 @@
             <p>As said before nothing special (you will found a lot of places doing this) and it can work in two modes: remote or in-person.</p>
             <p>Remote mode: is more or less a simple and informal "live podcast" where we invite a guest to talk about a specific subject and after that there's a debate/discussion/question if the audience is willing to participate of course (nothing is mandatory, people are free and motivated to do so) :)</p>
             <p>In-person events: the structure is similar to remote but there's an advantage... we provide pizza, beer, bananas, peanut butter and that goodies that you like so much :P</p>
-          </p>
           <p>
             <b>How did this starts?</b>
             <p>Start in 2018, in a small company, in a small city - <a href="https://www.visiteleiria.pt/en/home/" target="_blank">Leiria, Portugal</a> - because it was missing a "safe" place for the tech geeks to share their knowledge, frustrations, problems, etc... </p> 
@@ -74,78 +75,34 @@
           </p>
         </section>
       </article>
-      <article id="aritcle-about-sponsors">
+      <article id="article-about-sponsors">
         <h2>Sponsors</h2>
         <section>
-          Main sponsor : <a href="https://www.md3.pt/" target="_blank">MD3 - Digital, Design and Development</a></span>          
+          <b>Main</b> <br/>
+          <a href="https://www.md3.pt/" target="_blank" title="MD3 - Digital, Design and Development">MD3 - Digital, Design and Development</a></span>          
         </section>
-          All sessions : <a href="https://www.mediatree.fr/" target="_blank">Mediatree - Innovateur de veille audiovisuelle</a> <br/>
-          On the two elastic sessions : <a href="https://www.elastic.co/" target="_blank">Elastic</a>
+        <section>
+          <b>Others</b><br/>
+          <a href="https://www.mediatree.fr/" target="_blank" title="Mediatree - Innovateur de veille audiovisuelle">Mediatree - Innovateur de veille audiovisuelle</a> <br/>
+          <a href="https://www.elastic.co/" target="_blank" title="Elasticsearch, elastic">Elastic</a> (two sessions : <a class="session--anchor" href="#sessions-article-m-u-1">Elastic Leiria</a>, <a class="session--anchor" href="#sessions-article-m-u-3">Elastic Leiria - 2nd edition</a>)
         </section>
       </article>
-      <article id="aritcle-contacts">
+      <article id="article-contacts">
         <h2>Contacts</h2>
         <section>
           If you have any questions or sugestions : <a href="mailto:crowing.sessions@gmail.com?subject=Questions and sugestions&body=Crowww">don't be shy, just send us an email!</a>
         </section>
       </article>
+      <article id="article-licence">
+        <section>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="assets/images/cc.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+        </section>
+      </article>
     </main>
     <main id="mainSessionsElement" class="container mt-5 main--element"></main>    
     <main id="mainSpeakersElement" class="container mt-5 main--element"></main>
-
     <script>
-      $(window).scroll(function() {     
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
-          $("#mainHeaderDiv").addClass("scrolled");
-        } else {
-          $("#mainHeaderDiv").removeClass("scrolled");
-        }
-      });
-
-      $(".nav--item").on("click", function() {
-        $(".main--element").removeClass("active");
-        $(".main--element[id='" + $(this).data("main") + "']").addClass("active");
-        $(".nav--item").removeClass("active");
-        $(this).addClass("active");
-        document.title = "Crowing sessions - " + $(this).attr("title");
-      });
-      
-      let playAttempt = setInterval(
-        () => {
-          $("#audioCrow")[0].play().then(
-            () => {
-              $("#audioCrow")[0].muted = false;
-              clearInterval(playAttempt);
-            }
-          )
-          .catch(
-            (error) => {}
-          );
-        }, 3000
-      );
-
-      /* prepare speakers and sessions */
-      prepareSpeakers();
-      prepareSessions();
-
-      $(".huge-title").animate({"opacity": 1}, 1000, function() {
-        $("#landingBrandDiv").animate({"opacity": 1}, 1000, function() {
-          $("#mainHeader").animate({"opacity": 1}, 1000);
-        });
-      });
-
-      $(".speaker--anchor").on("click", function() {
-        $(".main--element").removeClass("active");
-        $(".main--element[id='mainSpeakersElement']").addClass("active");
-        $(".nav--item").removeClass("active");
-        $(".nav--item[data-main='mainSpeakersElement'").addClass("active");
-        document.title = "Crowing sessions - Speakers";
-      });
-
-      $(".crow--the--singer").on("click", function() {
-        $("#audioCrow")[0].play();
-      });
+      initPages();
     </script>
   </body>
 </html>
