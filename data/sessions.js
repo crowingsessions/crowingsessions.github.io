@@ -138,8 +138,7 @@ function prepareSessions() {
     var article = $("<article>").attr("id", "sessions-article-" + session.slug).appendTo(mainSessionsObj).addClass("session--anchor--point");;
     var title = $("<h2>").text(session.title).appendTo(article);
     var sessionDate = new Date(session.date);
-    debugger
-    var sessionDateFormattedObj = $("<h4>").text(sessionDate.getDay() + " " + months[sessionDate.getMonth()] + " " + sessionDate.getFullYear()).appendTo(article);
+    var sessionDateFormattedObj = $("<h4>").text(sessionDate.getDate() + " " + months[sessionDate.getMonth()] + " " + sessionDate.getFullYear()).appendTo(article);
 
     if (session.type == "normal") {
       var sessionSpeakers = $("<h5>").html("<a class='speaker--anchor' href='#speaker-article-" + session.speakers[0].slug + "'>" + session.speakers[0].name + "</a>").appendTo(article);
