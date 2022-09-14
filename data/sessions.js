@@ -1,5 +1,24 @@
 
-var sessions = [
+var sessions = [  
+  {
+    "type": "normal",
+    "slug": "g-s-5",
+    "date": "2022-09-21",
+    "title": "What the Amish can teach us about technology",
+    "areas": ["Philosophy", "Digital era"],
+    "speakers": [{ "slug": "daniel-mulroy", "name": "Daniel Mulroy" }],
+    "description": `
+      <p>Do you ever wonder if the technology you're working on matters?<br/>Do you get asked to work with or build technology that doesn't align with your values? With the world you want to live in?<br/>What is technology, really, and why does it matter?<br/></p>
+      <p>Through Daniel's journey, we will explore the different layers of meaning around technology, the healthy and unhealthy ways in which he has seen it implemented, and his current living question: <br/><b>How can technology support a healthy society?</b></p>
+    `,
+    "links": [
+      {
+        "url": "https://us06web.zoom.us/j/87481691000?pwd=T0RFczl1RzhyNmNBRi9HbDN6c3VuUT09",
+        "name": "Join us in zoom, we start at 17h00 Lisbon (GMT +01:00)",
+        "type": "url"
+      }
+    ]
+  },
   {
     "type": "normal",
     "slug": "g-s-4",
@@ -126,7 +145,7 @@ function prepareSessions() {
       var withPrefix = $("<b>").text("With : ").prependTo(sessionSpeakers);
       var areas = $("<p>").text(session.areas.join(", ")).css("font-size", "12px").appendTo(article);
       var sessionSectionDescription = $("<section>").attr("id", "article--section--session-" + session.slug).appendTo(article);
-      var description = $("<p>").text(session.description).appendTo(sessionSectionDescription);
+      var description = $("<p>").html(session.description).appendTo(sessionSectionDescription);
       var sessionSectionLinks = $("<section>").attr("id", "article--section--session-links-" + session.slug).addClass("session--section--links d-flex align-items-center container row").appendTo(article);
 
       $.each(session.links, function(i, link) {

@@ -9,6 +9,18 @@ var speakers = [
     "contacts": []
   },
   {
+    "name": "Daniel Mulroy",
+    "slug": "daniel-mulroy",
+    "country": "us",
+    "position": "Three time co-founder and CTO",
+    "company": "GOOD Vibes Media",
+    "description": `
+      <p>Daniel Mulroy is an engineer born into a family of artists in California. After starting and running two successful technology-based service businesses in America for over 10 years, in 2018 he co-founded an enterprise SaaS product in Paris, focused on distributing thought-provoking content to help employees and managers grow into better people and better professionals.</p>
+      <p>Daniel is also an accomplished drummer, an enthusiastic snowboarder, scuba diver, and horseman.<br/>When he's not launching new features or debugging an existing one, he can be found in jazz clubs, or travelling around Europe and the Americas to experience everything our beautiful planet has to offer.</p>
+    `,
+    "contacts": []
+  },
+  {
     "name": "Gonçalo Dias",
     "slug": "goncalo-dias",
     "country": "pt",
