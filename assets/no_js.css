@@ -1,0 +1,178 @@
+* {
+  font-family: 'Inconsolata', monospace !important;
+}
+
+html { 
+  scroll-padding-top: 100px; 
+}
+
+#landingBrandDiv {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+#landingBrandDiv > img {
+  height: 100%;
+  width: 100%;
+}
+
+.huge-title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.nav-bar--brand--div {
+  padding-top: 20px;
+}
+
+.nav-bar--brand {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-bar--brand > img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-link,      
+.nav-link:active,
+.nav-link:focus {
+  text-decoration: none;
+  outline: none;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+}
+
+#mainHeader {
+  height: 87px;
+  background-color: white;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,.3);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+#mainHeader > figure {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 16px;
+}
+
+#mainHeader > nav {
+  float: right;
+  padding-top: 37px;
+  padding-right: 16px;
+}
+
+.main--element {
+  padding: 0 16px;
+  border-bottom: 1px solid black;
+}
+
+#mainLandingElement {
+  margin-top: 127px;
+}
+
+#mainAboutElement > article {
+  margin-bottom: 35px;
+}
+
+#mainSessionsElement > article {
+  padding-bottom: 15px;
+}
+
+#mainSessionsElement > article:not(:last-child) {
+  border-bottom: 1px solid black;    
+  margin-bottom: 32px;
+}
+
+#mainSessionsElement > article > section {
+  margin-top: 20px;
+}
+
+#mainSpeakersElement > article {
+  padding-bottom: 15px;
+}
+
+#mainSpeakersElement > article:not(:last-child) {
+  border-bottom: 1px solid black;    
+  margin-bottom: 32px;
+}
+
+.speaker-country {
+  font-size: 13px;
+  display: block;
+  margin-top: 0;
+}
+
+.speaker--section--contacts > a {
+  margin-right: 16px;
+}
+
+.speaker--section--contacts > a > span {
+  margin-left: 5px;        
+}
+
+.speaker--section--contacts > a > object {
+  margin-top: 10px;        
+}
+
+.speaker--section--description {
+  margin-top: 10px;
+}
+
+.session--section--links > a {
+  margin-right: 16px;
+}
+
+.session--section--links > a > span {
+  margin-left: 5px;        
+}
+
+.session--section--links > a > object {
+  margin-top: 10px;        
+}
+
+.speaker--anchor--point:target > h3 {
+  color: white;
+  background: black;
+}
+
+.session--anchor--point:target > h2 {
+  color: white;
+  background: black;
+}
+
+.crow--the--singer:hover {
+  cursor: pointer;
+}
+
+blockquote {
+  margin: 16px;
+}
+
+#article-about-sponsors > section {
+  margin-bottom: 16px;
+}
+
+#article-licence > section {
+  font-size: 11px;
+}
+
+#article-licence > section > a > img {
+  height: 20px;
+}
