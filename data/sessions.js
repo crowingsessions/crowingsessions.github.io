@@ -13,10 +13,19 @@ var sessions = [
     `,
     "links": [
       {
-        "url": "https://us06web.zoom.us/j/87481691000?pwd=T0RFczl1RzhyNmNBRi9HbDN6c3VuUT09",
-        "name": "Join us in zoom, we start at 17h00 Lisbon (GMT +01:00)",
+        "url": "https://docs.google.com/presentation/d/1rf2R4fTHtSI34VDbaQD0yFcfr2hEPyOdjejjwBxohsM/edit?usp=sharing",
+        "name": "Presentation slides (with notes)",
         "type": "url"
-      }
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=A94b4RcLPp4",
+        "name": "Check session",
+        "type": "youtube"
+      },
+      {
+        "name": "Crow review log",
+        "type": "log"
+      },
     ]
   },
   {
@@ -129,14 +138,14 @@ var sessions = [
 ]
 
 /**
- * Add speakers to speakers article section
+ * Add sessions to sessions article section
  */
 function prepareSessions() {
   var mainSessionsObj = $("#mainSessionsElement");
 
   $.each(sessions, function (idx, session) {
-    var article = $("<article>").attr("id", "sessions-article-" + session.slug).appendTo(mainSessionsObj).addClass("session--anchor--point");;
-    var title = $("<h2>").text(session.title).appendTo(article);
+    var article = $("<article>").attr("id", "sessions-article-" + session.slug).appendTo(mainSessionsObj).addClass("session--anchor--point");
+    var title = $("<h2>").html(session.title).appendTo(article);
     var sessionDate = new Date(session.date);
     var sessionDateFormattedObj = $("<h4>").text(sessionDate.getDate() + " " + months[sessionDate.getMonth()] + " " + sessionDate.getFullYear()).appendTo(article);
 
@@ -148,11 +157,15 @@ function prepareSessions() {
       var description = $("<p>").html(session.description).appendTo(sessionSectionDescription);
       var sessionSectionLinks = $("<section>").attr("id", "article--section--session-links-" + session.slug).addClass("session--section--links d-flex align-items-center container row").appendTo(article);
 
+      sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-article-" + session.slug, "title": "Share this article with the world", "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text("Share")).prepend(shareIconObj.clone()));
+
       $.each(session.links, function(i, link) {
         if (link.type == "youtube") {
-          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "rel": "nofollow" }).append($("<span>").text(link.name)).prepend(youtubeIconObj.clone()));
+          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "rel": "nofollow", "class": "d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(youtubeIconObj.clone()));
+        } else if (link.type == "log") {
+          sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-log-article-" + session.slug, "title": "Crow log review", "class": "session--log--anchor d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(logIconObj.clone()));
         } else {
-          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank" }).append($("<span>").text(link.name)).prepend(urlIconObj.clone()));
+          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(urlIconObj.clone()));
         }
       });
     } else if (session.type == "meet") {
@@ -164,6 +177,9 @@ function prepareSessions() {
         var sessionSectionArticleTitle = $("<h5>").html("<a class='speaker--anchor' href='#speaker-article-" + v.speakers[0].slug + "'>" + v.speakers[0].name + "</a> - " + v.title).appendTo(sessionSectionArticle);
         var sessionSectionArticleSection = $("<section>").html("<p>" + v.description + "</p>").appendTo(sessionSectionArticle);
       });
+
+      var sessionSectionLinks = $("<section>").attr("id", "article--section--session-links-" + session.slug).addClass("session--section--links d-flex align-items-center container row").appendTo(article);
+      sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-article-" + session.slug, "title": "Share this article with the world", "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text("Share")).prepend(shareIconObj.clone()));
     }
   });
 }

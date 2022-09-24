@@ -108,6 +108,15 @@ html {
   margin-bottom: 32px;
 }
 
+#mainSessionsLogsElement > article {
+  padding-bottom: 15px;
+}
+
+#mainSessionsLogsElement > article:not(:last-child) {
+  border-bottom: 1px solid black;    
+  margin-bottom: 32px;
+}
+
 .speaker-country {
   font-size: 13px;
   display: block;
@@ -137,16 +146,17 @@ html {
   margin-left: 5px;        
 }
 
-.session--section--links > a > object {
-  margin-top: 10px;        
-}
-
 .speaker--anchor--point:target > h3 {
   color: white;
   background: black;
 }
 
 .session--anchor--point:target > h2 {
+  color: white;
+  background: black;
+}
+
+.session--log--anchor--point:target > h2 {
   color: white;
   background: black;
 }
@@ -169,4 +179,9 @@ blockquote {
 
 #article-licence > section > a > img {
   height: 20px;
+}
+
+.share-svg {
+  height: 12px;
+  width: 12px;
 }

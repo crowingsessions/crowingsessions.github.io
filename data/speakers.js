@@ -18,7 +18,12 @@ var speakers = [
       <p>Daniel Mulroy is an engineer born into a family of artists in California. After starting and running two successful technology-based service businesses in America for over 10 years, in 2018 he co-founded an enterprise SaaS product in Paris, focused on distributing thought-provoking content to help employees and managers grow into better people and better professionals.</p>
       <p>Daniel is also an accomplished drummer, an enthusiastic snowboarder, scuba diver, and horseman.<br/>When he's not launching new features or debugging an existing one, he can be found in jazz clubs, or travelling around Europe and the Americas to experience everything our beautiful planet has to offer.</p>
     `,
-    "contacts": []
+    "contacts": [
+      {
+        "url": "https://fr.linkedin.com/in/danielfmulroy",
+        "type": "linkedin"
+      }
+    ]
   },
   {
     "name": "Gonçalo Dias",
@@ -143,14 +148,12 @@ var speakers = [
     "name": "Vera Ferreira",
     "slug": "vera-ferreira",
     "country": "pt",
-    "position": "Documentary Linguistic",
+    "position": "Documentary Linguistics",
     "company": "",
     "description": `
-      <p>Trained linguist with a background in language documentation and field research. Her main research interests lie in European endangered languages and in the connection between documentary data and language revitalisation.</p>
-      <p>Fell in love with Minderico, a language spoken in Minde, municipality of Alcanena, about 20 years ago. Born in Batalha, Leiria, many years ago, her father went to work for Minde and brought her a small book with a few words in Minderico. Since then, she has tried to learn and investigate more about the language. Minderico was the main reason why she specialised in endangered language documentation.</p>
-      <p>Nowadays, is head Archive Support and Development Officer at the Endangered Languages Archive (<a href="https://www.elararchive.org/" target="_blank">SOAS University of London</a>) and co-found and head of the Interdisciplinary Centre for Social and Language Documentation (<a href="http://www.cidles.eu/" target="_blank">CIDLeS</a>) - a non-profit institution founded in January 2010 in Minde (Portugal) by a group of national and international researchers.</p>
-      <blockquote><p>The Interdisciplinary Centre for Social and Language Documentation (CIDLeS) aims to improve and deepen research in two linguistic areas: language documentation and linguistic typology. Besides the documentation, study and dissemination of European endangered and minority languages, CIDLeS is also engaged in the development of language technologies for scientific and didactic work on lesser-used languages.</p><cite>From http://cidleseu.de13.fcomet.com/our-mission/mission-statement/ <br></cite></blockquote>
-      <p>As Digital Archivist, at SOAS University of London, she manages the full project lifecycle of language documentation materials at the archive end (ingestion, evaluation and processing of materials and formats, curation, upload, access setting, catalogue display). Also diagnoses and troubleshoot problems with data and metadata, reviews and approves data management plans, prepares and administrate legal documentation around deposits, organises and trains lexicography and semantics, video conversion, linguistic and metadata software (e.g. ELAN, FLEx, Arbil, CMDI Maker), metadata and data management workflows, and digital archiving.</p>
+      <p>Born in Batalha, Leiria, many years ago, a friend of her father from Minde brought her a small book with a few words in Minderico. Since then, she has tried to learn and investigate more about the language. Minderico was the main reason why she specialised in endangered language documentation.</p>
+      <p>Nowadays, is head ELDP Archiving Officer for the Endangered Languages Documentation Programme (Berlin-Brandenburg Academy of Sciences and Humanities, Berlin / Germany) and co-found and head of the Interdisciplinary Centre for Social and Language Documentation (<a href="http://cidles.eu/" target="_blank">CIDLeS</a>) - a non-profit institution founded in January 2010 in Minde (Portugal) by a group of national and international researchers.</p>
+      <p>As Archiving Officer, at BBAW Germany, she manages the full project lifecycle of language documentation projects, from data collection to archiving, covering conceptualisation of documentatin plans, ingestion, evaluation and processing of materials and formats, curation, upload, access setting, catalogue display. She also diagnoses and troubleshoots problems with data and metadata, reviews and approves data management plans, prepares and administrate legal documentation around deposits, organises and trains lexicography and semantics, video conversion, linguistic and metadata software (e.g. ELAN, FLEx, Arbil, CMDI Maker), metadata and data management workflows, and digital archiving.</p>
     `,
     "contacts": [
       {

@@ -32,6 +32,7 @@ function initPages() {
     /* prepare speakers and sessions */
     prepareSpeakers();
     prepareSessions();
+    prepareSessionsLogs();
     
     if (location.hash) {
         let currentHash = location.hash.slice(1);
@@ -39,9 +40,11 @@ function initPages() {
         let availableAnchors = [
             { "key": "speaker-article", "value": "mainSpeakersElement" },
             { "key": "sessions-article", "value": "mainSessionsElement" },
+            { "key": "sessions-log-article", "value": "mainSessionsLogsElement" },
             { "key": "mainAboutElement", "value": "mainAboutElement" },
             { "key": "mainSessionsElement", "value": "mainSessionsElement" },
-            { "key": "mainSpeakersElement", "value": "mainSpeakersElement" }
+            { "key": "mainSpeakersElement", "value": "mainSpeakersElement" },            
+            { "key": "mainSessionsLogsElement", "value": "mainSessionsLogsElement" },
         ]
 
         for (let entry of availableAnchors) {
@@ -67,6 +70,10 @@ function initPages() {
   
     $(".session--anchor").on("click", function () {        
         openNavItem("mainSessionsElement");
+    });
+    
+    $(".session--log--anchor").on("click", function () {        
+        openNavItem("mainSessionsLogsElement");
     });
 
     $(".crow--the--singer").on("click", function () {

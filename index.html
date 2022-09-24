@@ -23,7 +23,8 @@
     <!-- our scripts -->
     <script src="data/common.js"></script>
     <script src="data/speakers.js"></script>
-    <script src="data/sessions.js"></script>    
+    <script src="data/sessions.js"></script>
+    <script src="data/sessions_logs.js"></script>
     <script src="data/init.js"></script>
   </head>
   <body>
@@ -41,6 +42,7 @@
             <a class="nav-link nav--item" data-main="mainAboutElement" title="About" href="#mainAboutElement">About</a>
             <a class="nav-link nav--item" data-main="mainSessionsElement" title="Sessions" href="#mainSessionsElement">Sessions</a>
             <a class="nav-link nav--item" data-main="mainSpeakersElement" title="Speakers" href="#mainSpeakersElement">Speakers</a>
+            <a class="nav-link nav--item" data-main="mainSessionsLogsElement" title="Logs" href="#mainSessionsLogsElement">Logs</a>
           </nav>
         </div>
       </div>
@@ -101,8 +103,9 @@
         </section>
       </article>
     </main>
-    <main id="mainSessionsElement" class="container mt-5 main--element"></main>    
+    <main id="mainSessionsElement" class="container mt-5 main--element"></main>
     <main id="mainSpeakersElement" class="container mt-5 main--element"></main>
+    <main id="mainSessionsLogsElement" class="container mt-5 main--element"></main>
     <script>
       initPages();
     </script>

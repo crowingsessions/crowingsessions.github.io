@@ -113,6 +113,15 @@ html {
   margin-bottom: 32px;
 }
 
+#mainSessionsLogsElement > article {
+  padding-bottom: 15px;
+}
+
+#mainSessionsLogsElement > article:not(:last-child) {
+  border-bottom: 1px solid black;    
+  margin-bottom: 32px;
+}
+
 .speaker-country {
   font-size: 13px;
   display: block;
@@ -157,6 +166,11 @@ html {
   background: black;
 }
 
+.session--log--anchor--point:target > h2 {
+  color: white;
+  background: black;
+}
+
 .crow--the--singer:hover {
   cursor: pointer;
 }
@@ -175,4 +189,9 @@ blockquote {
 
 #article-licence > section > a > img {
   height: 20px;
+}
+
+.share-svg {
+  height: 12px;
+  width: 12px;
 }
