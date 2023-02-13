@@ -9,6 +9,20 @@ var speakers = [
     "contacts": []
   },
   {
+    "name": "Celso Santos",
+    "slug": "celso-santos",
+    "country": "pt",
+    "position": " Solutions ArchitectSolutions Architect",
+    "company": "Evooq",
+    "description": "",
+    "contacts": [
+      {
+        "url": "https://www.linkedin.com/in/celsobsantos/",
+        "type": "linkedin"
+      }
+    ]
+  },
+  {
     "name": "Daniel Mulroy",
     "slug": "daniel-mulroy",
     "country": "us",
@@ -88,10 +102,15 @@ var speakers = [
     "name": "Lee Reis",
     "slug": "lee-reis",
     "country": "pt",
-    "position": "Software Engineer",
+    "position": "Senior Software Engineer",
     "company": "VOID",
-    "description": "",
-    "contacts": []
+    "description": "Problem solver. Or problem creator. One or the other.<br/>AKA Feiticeiro das trevas iluminadas",
+    "contacts": [
+      {
+        "url": "https://pt.linkedin.com/in/leereis",
+        "type": "linkedin"
+      }
+    ]
   },
   {
     "name": "Marco Oliveira",

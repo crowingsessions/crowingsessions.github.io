@@ -10,17 +10,28 @@ var sessions = [
     "description": "Meeting about elasticsearch and some of it's applications",
     "sessions": [
       { "speakers": [{ "slug": "lee-reis", "name": "Lee Reis" }], "title": "Muscle Services", "description": "Microservice and monolithic architectures" },
+      { "speakers": [{ "slug": "celso-santos", "name": "Celso Santos" }], "title": "Code review like a human", "description": "Best practices" },
     ],
     "links": [
       {
-        "url": "https://www.md3.pt/en/geek-session-4-in-review/",
-        "name": "Review article",
+        "url": "https://www.eventbrite.com/e/crowing-sessions-architectures-do-dont-and-why-not-tickets-546080891647",
+        "name": "Join us at the venue for some pizza, drinks and networking",
         "type": "url"
       },
       {
-        "url": "https://www.youtube.com/watch?v=RaJSYFTeYcY",
-        "name": "Check session",
-        "type": "youtube"
+        "url": "https://us06web.zoom.us/meeting/register/tZYtfuisrDktHNFlzxU4Pz4SiiUmYQCH6A_c/",
+        "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
+        "type": "url"
+      }
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.void.pt/",
+        "name": "VOID Software"
+      },
+      {
+        "url": "https://www.valispace.com/",
+        "name": "Valispace"
       }
     ]
   },
@@ -50,6 +61,12 @@ var sessions = [
         "name": "Crow review log",
         "type": "log"
       },
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      }
     ]
   },
   {
@@ -71,6 +88,12 @@ var sessions = [
         "name": "Check session",
         "type": "youtube"
       }
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      }
     ]
   },
   {
@@ -87,6 +110,12 @@ var sessions = [
         "name": "Review article",
         "type": "url"
       }
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      }
     ]
   },
   {
@@ -96,7 +125,13 @@ var sessions = [
     "title": "Research and development of a functionality for image recognition for mobile applications",
     "areas": ["OCR", "Images"],
     "speakers": [{ "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }],
-    "description": "A showcase of his own master degree thesis"
+    "description": "A showcase of his own master degree thesis",
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      }
+    ]
   },
   {
     "type": "normal",
@@ -117,7 +152,12 @@ var sessions = [
         "name": "Check session",
         "type": "youtube"
       }
-      
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      }
     ]
   },
   {
@@ -132,6 +172,16 @@ var sessions = [
       { "speakers": [{ "slug": "michael-reis", "name": "Michael Reis" }], "title": "What is elasticsearch", "description": "Introduction to elasticsearch and some pros VS cons" },
       { "speakers": [{ "slug": "marco-oliveira", "name": "Marco Oliveira" }], "title": "Elasticsearch and VUE", "description": "Demo of a VUE application with Elasticsearch" },
     ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      },
+      {
+        "url": "https://www.elastic.co/",
+        "name": "Elastic"
+      }
+    ]
   },
   {
     "type": "meet",
@@ -144,6 +194,12 @@ var sessions = [
     "sessions": [
       { "speakers": [{ "slug": "antonio-lopes", "name": "António Lopes" }], "title": "Behind the sssssscripting", "description": "Briefly exposing python misconceptions in usage/application and short introduction to django" },
     ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      }
+    ]
   },
   {
     "type": "meet",
@@ -158,6 +214,16 @@ var sessions = [
       { "speakers": [{ "slug": "pabulo-silva", "name": "Pábulo Silva" }], "title": "Rich Logging (logstash/elasticsearch/kibana)", "description": "Using kibana with logstash in a real scenario" },
       { "speakers": [{ "slug": "goncalo-dias", "name": "Gonçalo Dias" }], "title": "Infrastructures and study cases of Mediatree clients", "description": "Showcase of infrastrucute applied in some clients by Mediatree" },
     ],
+    "sponsors": [
+      {
+        "url": "https://www.md3.pt/en/",
+        "name": "MD3"
+      },
+      {
+        "url": "https://www.elastic.co/",
+        "name": "Elastic"
+      }
+    ]
   },
 ]
 
@@ -179,19 +245,6 @@ function prepareSessions() {
       var areas = $("<p>").text(session.areas.join(", ")).css("font-size", "12px").appendTo(article);
       var sessionSectionDescription = $("<section>").attr("id", "article--section--session-" + session.slug).appendTo(article);
       var description = $("<p>").html(session.description).appendTo(sessionSectionDescription);
-      var sessionSectionLinks = $("<section>").attr("id", "article--section--session-links-" + session.slug).addClass("session--section--links d-flex align-items-center container row").appendTo(article);
-
-      sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-article-" + session.slug, "title": "Share this article with the world", "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text("Share")).prepend(shareIconObj.clone()));
-
-      $.each(session.links, function(i, link) {
-        if (link.type == "youtube") {
-          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "rel": "nofollow", "class": "d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(youtubeIconObj.clone()));
-        } else if (link.type == "log") {
-          sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-log-article-" + session.slug, "title": "Crow log review", "class": "session--log--anchor d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(logIconObj.clone()));
-        } else {
-          sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(urlIconObj.clone()));
-        }
-      });
     } else if (session.type == "meet") {
       var meetThematic = $("<h5>").html("<b>Thematic :</b> " + session.thematic).appendTo(article);
 
@@ -201,9 +254,29 @@ function prepareSessions() {
         var sessionSectionArticleTitle = $("<h5>").html("<a class='speaker--anchor' href='#speaker-article-" + v.speakers[0].slug + "'>" + v.speakers[0].name + "</a> - " + v.title).appendTo(sessionSectionArticle);
         var sessionSectionArticleSection = $("<section>").html("<p>" + v.description + "</p>").appendTo(sessionSectionArticle);
       });
-
-      var sessionSectionLinks = $("<section>").attr("id", "article--section--session-links-" + session.slug).addClass("session--section--links d-flex align-items-center container row").appendTo(article);
-      sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-article-" + session.slug, "title": "Share this article with the world", "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text("Share")).prepend(shareIconObj.clone()));
     }
+
+    // add session links
+    var sessionSectionLinks = $("<section>").attr("id", "article--section--session-links-" + session.slug).addClass("session--section--links d-flex align-items-center container row").appendTo(article);
+    sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-article-" + session.slug, "title": "Share this article with the world", "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text("Share")).prepend(shareIconObj.clone()));
+
+    $.each(session.links, function(i, link) {
+      if (link.type == "youtube") {
+        sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "rel": "nofollow", "class": "d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(youtubeIconObj.clone()));
+      } else if (link.type == "log") {
+        sessionSectionLinks.append($("<a>").attr({ "href": "#sessions-log-article-" + session.slug, "title": "Crow log review", "class": "session--log--anchor d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(logIconObj.clone()));
+      } else {
+        sessionSectionLinks.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "class": "d-flex flex-row align-items-center" }).append($("<span>").text(link.name)).prepend(urlIconObj.clone()));
+      }
+    });
+
+    // add session sponsors
+    var sessionSectionSponsors = $("<section>").attr("id", "article--section--session-sponsors-" + session.slug).addClass("session--section--sponsors").appendTo(article);
+    sessionSectionSponsors.append($("<h6>").text("Sponsors"));
+    sessionSectionSponsorsWrapper = $("<section>").addClass("d-flex flex-column").appendTo(sessionSectionSponsors);
+    
+    $.each(session.sponsors, function(i, link) {
+      sessionSectionSponsorsWrapper.append($("<a>").attr({ "href": link.url, "title": link.name, "target": "_blank", "class": "article--section--session-sponsor--a" }).append($("<span>").text(link.name)));
+    });
   });
 }

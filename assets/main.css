@@ -185,3 +185,7 @@ blockquote {
   height: 12px;
   width: 12px;
 }
+
+.session--section--sponsors {
+  margin-top: 30px !important;
+}
