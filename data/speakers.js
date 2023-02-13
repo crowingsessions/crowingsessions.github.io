@@ -85,6 +85,15 @@ var speakers = [
     ]
   },
   {
+    "name": "Lee Reis",
+    "slug": "lee-reis",
+    "country": "pt",
+    "position": "Software Engineer",
+    "company": "VOID",
+    "description": "",
+    "contacts": []
+  },
+  {
     "name": "Marco Oliveira",
     "slug": "marco-oliveira",
     "country": "pt",

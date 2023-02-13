@@ -1,6 +1,30 @@
 
 var sessions = [  
   {
+    "type": "meet",
+    "slug": "m-u-4",
+    "date": "2023-02-22",
+    "title": "Architectures: do, don't and why not?",
+    "thematic": "Architecture",
+    "areas": ["Leiria", "Microservices", "VOID", "Architectures"],
+    "description": "Meeting about elasticsearch and some of it's applications",
+    "sessions": [
+      { "speakers": [{ "slug": "lee-reis", "name": "Lee Reis" }], "title": "Muscle Services", "description": "Microservice and monolithic architectures" },
+    ],
+    "links": [
+      {
+        "url": "https://www.md3.pt/en/geek-session-4-in-review/",
+        "name": "Review article",
+        "type": "url"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RaJSYFTeYcY",
+        "name": "Check session",
+        "type": "youtube"
+      }
+    ]
+  },
+  {
     "type": "normal",
     "slug": "g-s-5",
     "date": "2022-09-21",
