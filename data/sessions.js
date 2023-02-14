@@ -10,7 +10,7 @@ var sessions = [
     "description": "Meeting about elasticsearch and some of it's applications",
     "sessions": [
       { "speakers": [{ "slug": "lee-reis", "name": "Lee Reis" }], "title": "Muscle Services", "description": "Microservice and monolithic architectures" },
-      { "speakers": [{ "slug": "celso-santos", "name": "Celso Santos" }], "title": "Code review like a human", "description": "Best practices" },
+      { "speakers": [{ "slug": "celso-santos", "name": "Celso Santos" }], "title": "TBA", "description": "" },
     ],
     "links": [
       {
