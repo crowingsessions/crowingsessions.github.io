@@ -13,6 +13,8 @@ var sessions = [
       { "speakers": [{ "slug": "celso-santos", "name": "Celso Santos" }], "title": "Code Review for Humans", "description": "" },
     ],
     "links": [
+      /*
+      Keep just for history and occupy more internet space
       {
         "url": "https://www.eventbrite.com/e/crowing-sessions-architectures-do-dont-and-why-not-tickets-546080891647",
         "name": "Join us at the venue for some pizza, drinks and networking",
@@ -22,6 +24,20 @@ var sessions = [
         "url": "https://us06web.zoom.us/meeting/register/tZYtfuisrDktHNFlzxU4Pz4SiiUmYQCH6A_c/",
         "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
         "type": "url"
+      }*/
+      {
+        "url": "https://www.mentimeter.com/app/presentation/alh7n6izryauc5ara7oscmhyhv1gawmu",
+        "name": "Lee's Presentation slides",
+        "type": "url"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=",
+        "name": "Check session",
+        "type": "youtube"
+      },
+      {
+        "name": "Crow review log",
+        "type": "log"
       }
     ],
     "sponsors": [
