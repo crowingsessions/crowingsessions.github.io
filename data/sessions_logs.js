@@ -1,5 +1,31 @@
 
-var sessionsLogs = [  
+var sessionsLogs = [
+  {
+    "slug": "m-u-4",
+    "date": "2023-02-22",
+    "title": "What the Amish can teach us about technology",
+    "speakers": [{ "slug": "lee-reis", "name": "Lee Reis" }, { "slug": "celso-santos", "name": "Celso Santos" }],
+    "description": `
+      <p>On this session we had two guests that approched two subjects that are essencial in software development and architecture.</p>
+      <p>Lee Reis, Senior Software Developer in VOID, confronted monolithic and microservices architectures by briefly comparing both not in "school" way but rather from a business and development presctive using is own experience explaing cons and pros of each and also exposing the cost of migration from monolithic to microservices. Point out that neither of the solutions is perfect, it will always depends on the project and the vison and goals of it. Like Lee said "It depends..." (team members, project nature, costs, ...) there's no correct answer for this.</p>
+      <p>Celso Santos, Solutions Architect in Evooq, present a "moral and ethic" way of how somehow be a better/succeful human (programmer) while doing code review and how to be a good team member. This may seem not to be crucial but in fact code review is a very important step in software development, because can make the sofware more robust and stable through time and the developers more confortable to manage it (either new features, bug fixes, etc...)</p>
+      <p>Quoting Celso Santos quoting Philip Greenspun "... programmers are very unlikable people ... In aviation, for example, people who greatly overestimate their level of skill are all dead."</p>
+      <p>Key points:<ul><li>Architecture</li><li>Monolithic</li><li>Microservices</li><li>Code review</li><li>Solutions</li><li>Team work</li></ul></p>
+      <p>P.S:<ul><li>This was the first time we had a hybrid session (presential and remote), it was nice to see and feel people's energy and good vibe during the session and networking while munching on some snacks, pizza and beer (there was also other beverages)</li><li>We had two new sponsors: <a href=”https://www.void.pt/” target="_blank">VOID Software</a> that provided an amazing venue <b>(VOID Academy)</b> with great conditions and staff; and <a href=”https://www.valispace.com/” target="_blank">Valispace</a> that boost our confidence with their t-shirts "Trust me I'm an Engineer"</li></ul></p>
+    `,
+    "links": [
+      {
+        "url": "https://www.mentimeter.com/app/presentation/alh7n6izryauc5ara7oscmhyhv1gawmu",
+        "name": "Lee's Presentation slides",
+        "type": "url"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=",
+        "name": "Check session",
+        "type": "youtube"
+      },
+    ]
+  },
   {
     "slug": "g-s-5",
     "date": "2022-09-21",
@@ -42,7 +68,16 @@ function prepareSessionsLogs() {
     var sessionDate = new Date(sessionLog.date);
     var sessionDateFormattedObj = $("<h4>").text(sessionDate.getDate() + " " + months[sessionDate.getMonth()] + " " + sessionDate.getFullYear()).appendTo(article);
 
-    var sessionSpeakers = $("<h5>").html("<a class='speaker--anchor' href='#speaker-article-" + sessionLog.speakers[0].slug + "'>" + sessionLog.speakers[0].name + "</a>").appendTo(article);
+    var sessionSpeakers = $("<h5>").appendTo(article);
+    $.each(sessionLog.speakers, function(i, speaker) {
+      if (i > 0) {
+        $("<span>").text(" & ").appendTo(sessionSpeakers);
+      }
+
+      var _speaker = $("<a class='speaker--anchor' href='#speaker-article-" + speaker.slug + "'>").text(speaker.name);
+      _speaker.appendTo(sessionSpeakers);
+    });
+
     var withPrefix = $("<b>").text("With : ").prependTo(sessionSpeakers);
     var sessionSectionDescription = $("<section>").attr("id", "article--section--session--log-" + sessionLog.slug).appendTo(article);
     var description = $("<p>").html(sessionLog.description).appendTo(sessionSectionDescription);
