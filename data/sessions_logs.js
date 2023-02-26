@@ -3,7 +3,7 @@ var sessionsLogs = [
   {
     "slug": "m-u-4",
     "date": "2023-02-22",
-    "title": "What the Amish can teach us about technology",
+    "title": "Architectures: do, don't and why not?",
     "speakers": [{ "slug": "lee-reis", "name": "Lee Reis" }, { "slug": "celso-santos", "name": "Celso Santos" }],
     "description": `
       <p>On this session we had two guests that approched two subjects that are essencial in software development and architecture.</p>
