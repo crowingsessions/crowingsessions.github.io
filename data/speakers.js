@@ -12,7 +12,7 @@ var speakers = [
     "name": "Celso Santos",
     "slug": "celso-santos",
     "country": "pt",
-    "position": " Solutions ArchitectSolutions Architect",
+    "position": " Solutions Architect",
     "company": "Evooq",
     "description": "",
     "contacts": [
