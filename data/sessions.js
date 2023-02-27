@@ -31,7 +31,12 @@ var sessions = [
         "type": "url"
       },
       {
-        "url": "https://www.youtube.com/watch?v=",
+        "url": "https://docs.google.com/presentation/d/1NNfZlOaEe6gAkyHk58ZryQxWhN0xz9Vf/edit?usp=sharing&ouid=116640801668531279977&rtpof=true&sd=true",
+        "name": "Celso's Presentation slides",
+        "type": "url"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6brzmeFyBVo",
         "name": "Check session",
         "type": "youtube"
       },
