@@ -13,6 +13,7 @@ var sessions = [
       { "speakers": [{ "slug": "bruno-januario", "name": "Bruno Januário" }], "title": "IBM Quantum - State of the Union", "description": "Future of the quantum" },
     ],
     "links": [],
+  },
   {
     "type": "meet",
     "slug": "m-u-4",
