@@ -1,5 +1,18 @@
 
-var sessions = [  
+var sessions = [
+  {
+    "type": "meet",
+    "slug": "m-u-5",
+    "date": "2023-05-03",
+    "title": "Physics: computation and space",
+    "thematic": "Physics",
+    "areas": ["Leiria", "Physics", "Astrophysics", "Quantum", "Space", "Computation"],
+    "description": "",
+    "sessions": [
+      { "speakers": [{ "slug": "joana-pereira", "name": "Joana Pereira" }], "title": "Ionization of ionosphere variations", "description": "Ionization of ionosphere variations during space meteorological phenomenon" },
+      { "speakers": [{ "slug": "bruno-januario", "name": "Bruno Januário" }], "title": "IBM Quantum - State of the Union", "description": "Future of the quantum" },
+    ],
+    "links": [],
   {
     "type": "meet",
     "slug": "m-u-4",
@@ -7,7 +20,7 @@ var sessions = [
     "title": "Architectures: do, don't and why not?",
     "thematic": "Architecture",
     "areas": ["Leiria", "Microservices", "VOID", "Architectures"],
-    "description": "Meeting about elasticsearch and some of it's applications",
+    "description": "",
     "sessions": [
       { "speakers": [{ "slug": "lee-reis", "name": "Lee Reis" }], "title": "Muscle Services", "description": "Microservice and monolithic architectures" },
       { "speakers": [{ "slug": "celso-santos", "name": "Celso Santos" }], "title": "Code Review for Humans", "description": "" },
