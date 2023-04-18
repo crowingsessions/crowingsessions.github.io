@@ -12,7 +12,28 @@ var sessions = [
       { "speakers": [{ "slug": "joana-pereira", "name": "Joana Pereira" }], "title": "Ionization of ionosphere variations", "description": "Ionization of ionosphere variations during space meteorological phenomenon" },
       { "speakers": [{ "slug": "bruno-januario", "name": "Bruno Januário" }], "title": "IBM Quantum - State of the Union", "description": "Future of the quantum" },
     ],
-    "links": [],
+    "links": [
+      {
+        "url": "https://www.eventbrite.com/e/crowing-sessions-physics-computation-and-space-tickets-619611603987",
+        "name": "Join us at the venue for some pizza, drinks and networking",
+        "type": "url"
+      },
+      {
+        "url": "https://us06web.zoom.us/meeting/register/tZMvcOChrTwsHNH0wB0fZPLXFvpMxLND0SL7/",
+        "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
+        "type": "url"
+      }
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.void.pt/",
+        "name": "VOID Software"
+      },
+      {
+        "url": "https://www.valispace.com/",
+        "name": "Valispace"
+      }
+    ]
   },
   {
     "type": "meet",
