@@ -9,6 +9,22 @@ var speakers = [
     "contacts": []
   },
   {
+    "name": "Bruno Januário",
+    "slug": "bruno-januario",
+    "country": "pt",
+    "position": "Software Architecture and Team Manager",
+    "company": "Softinsa",
+    "description":  `
+      <p>Besides the IT world, he is a professional landscape photographer artist and a Schrödinger's cat (and more) advocate physicist.</p>
+    `,
+    "contacts": [
+      {
+        "url": "https://pt.linkedin.com/in/bjanuario/",
+        "type": "linkedin"
+      }
+    ]
+  },
+  {
     "name": "Celso Santos",
     "slug": "celso-santos",
     "country": "pt",
@@ -52,6 +68,18 @@ var speakers = [
         "type": "linkedin"
       }
     ]
+  },
+  {
+    "name": "Joana Pereira",
+    "slug": "joana-pereira",
+    "country": "pt",
+    "position": "Researcher",
+    "company": "",
+    "description":  `
+      <p>Currently in her Master Degree in Physics studying ionization of ionosphere variations during space meteorological phenomenon in Portugal's Continental and archipelagos regions in "Observatório de Coimbra".</p>
+      <p>Between 2019-2022 belong to one of the first portuguese teams composed by students to launch an stratosphere balloon (STRATOSPOLCA).</p>
+    `,
+    "contacts": []
   },
   {
     "name": "João Sousa Silva",
