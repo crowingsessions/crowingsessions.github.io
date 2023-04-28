@@ -9,7 +9,6 @@ var sessions = [
     "areas": ["Leiria", "Physics", "Astrophysics", "Quantum", "Space", "Computation"],
     "description": "",
     "sessions": [
-      { "speakers": [{ "slug": "joana-pereira", "name": "Joana Pereira" }], "title": "Ionization of ionosphere variations", "description": "Ionization of ionosphere variations during space meteorological phenomenon" },
       { "speakers": [{ "slug": "bruno-januario", "name": "Bruno Januário" }], "title": "IBM Quantum - State of the Union", "description": "Future of the quantum" },
     ],
     "links": [
@@ -19,7 +18,7 @@ var sessions = [
         "type": "url"
       },
       {
-        "url": "https://us06web.zoom.us/meeting/register/tZMvcOChrTwsHNH0wB0fZPLXFvpMxLND0SL7/",
+        "url": "https://us06web.zoom.us/meeting/register/tZMvc-yhpzorGdGhXfioiVVLatW1BRqAfHb-",
         "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
         "type": "url"
       }
