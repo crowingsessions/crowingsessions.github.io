@@ -2,6 +2,42 @@
 var sessions = [
   {
     "type": "meet",
+    "slug": "m-u-6",
+    "date": "2023-06-21",
+    "title": "Mobile Apps: Hybrid or native that's the question",
+    "thematic": "Mobile",
+    "areas": ["Leiria", "Mobile apps", "Hybrid", "Cross-platform", "Framework", "Android", "iOS"],
+    "description": "",
+    "sessions": [
+      { "speakers": [{ "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }], "title": "", "description": "" },
+    ],
+    "links": [
+      /*
+      Keep just until links are public
+      {
+        "url": "",
+        "name": "Join us at the venue for some pizza, drinks and networking",
+        "type": "url"
+      },
+      {
+        "url": "",
+        "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
+        "type": "url"
+      }*/
+    ],
+    "sponsors": [
+      {
+        "url": "https://www.void.pt/",
+        "name": "VOID Software"
+      },
+      {
+        "url": "https://www.valispace.com/",
+        "name": "Valispace"
+      }
+    ]
+  },
+  {
+    "type": "meet",
     "slug": "m-u-5",
     "date": "2023-05-03",
     "title": "Physics: computation and space",
@@ -12,6 +48,8 @@ var sessions = [
       { "speakers": [{ "slug": "bruno-januario", "name": "Bruno Januário" }], "title": "IBM Quantum - State of the Union", "description": "Future of the quantum" },
     ],
     "links": [
+      /*
+      Keep just for history and occupy more internet space
       {
         "url": "https://www.eventbrite.com/e/crowing-sessions-physics-computation-and-space-tickets-619611603987",
         "name": "Join us at the venue for some pizza, drinks and networking",
@@ -21,6 +59,10 @@ var sessions = [
         "url": "https://us06web.zoom.us/meeting/register/tZMvc-yhpzorGdGhXfioiVVLatW1BRqAfHb-",
         "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
         "type": "url"
+      }*/      
+      {
+        "name": "Crow review log",
+        "type": "log"
       }
     ],
     "sponsors": [
