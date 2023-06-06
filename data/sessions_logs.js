@@ -1,6 +1,30 @@
 
 var sessionsLogs = [
   {
+    "slug": "m-u-5",
+    "date": "2023-05-03",
+    "title": "Physics: computation and space",
+    "speakers": [{ "slug": "bruno-januario", "name": "Bruno Januário" }],
+    "description": `
+      <p>During this session, it was briefly explained what is the quantum computation and some of its applicability in the real and "software" worlds, using the showcase of IBM Quantum - State of the Union. Although the subject was/is highly complex, the speaker tried to make it more accessible as possible, showing some examples and being open to a good discussion at the end on Q & A!</p>
+      <p>For privacy and legal reasons from IBM's side, we were not allowed to record the session. However, we will share some of the key points of the session and if you have any questions or want to know more about the subject, feel free to reach <a href="https://crowingsessions.github.io/#speaker-article-bruno-januario">Bruno Januário</a>, he is a very approachable person.</p>
+      <p>Keypoints:
+      <ul>
+      <li>Quantum computing is a huge technological step for mankind and it is happening much faster than anticipated;</li>
+      <li>There are even several private (financial, technological, etc..) and government entities investing a lot of money in this area - we are talking about billions due to the advantages that this technology brings to the world;</li>
+      <li>There are already real applications (usages) such as in industries: pharmaceutical (to test medicines) and automotive (BMW, Mercedes, etc...) among others;</li>
+      <li>In the same way that ChatGPT will not do or serve to do everything, QC also has/will have its uses due to the context;</li>
+      <li>It is an area that is in need of software developers because in the end it is just hardware made by physicists but now there is a lack of developers to start expanding its uses;</li>
+      <li>Recently (in papers) it has already been possible to decipher RSA "keys" (this shows how powerful this is)</li>
+      <li>Processors are smaller than people think;</li>
+      <li>There is parallelism of quantum computing and classical computing and this combination makes things even faster;</li>
+      <li>Programming in QC is just a paradigm shift which may initially seem strange but deep down is very similar to what is already being done with other languages/frameworks;</li>
+      <li>IBM has a free program that allows - for free - to program in QC - this is virtualization not a dedicated quantum computer, please check <a href="https://qiskit.org/">qiskit website</a> for a better understanding - in fact they really encourage that people start using it and that people experiment as much as they can; and there's still the <a href="https://research.ibm.com/blog/next-wave-quantum-centric-supercomputing">100x100 challenge</a> with a lot more information about this subject</li>
+      </ul></p>
+      <p>Sorry for not having a video recording but we hope that this helps a little, thank you in advance!</p>
+    `
+  },
+  {
     "slug": "m-u-4",
     "date": "2023-02-22",
     "title": "Architectures: do, don't and why not?",
