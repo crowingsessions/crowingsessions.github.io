@@ -70,6 +70,20 @@ var speakers = [
     ]
   },
   {
+    "name": "Iolanda Rosa",
+    "slug": "iolanda-rosa",
+    "country": "pt",
+    "position": "",
+    "company": "VOID",
+    "description": "",
+    "contacts": [
+      {
+        "url": "",
+        "type": ""
+      }
+    ]
+  },
+  {
     "name": "Joana Pereira",
     "slug": "joana-pereira",
     "country": "pt",
