@@ -9,8 +9,8 @@ var sessions = [
     "areas": ["Leiria", "Mobile apps", "Hybrid", "Cross-platform", "Framework", "Android", "iOS"],
     "description": "",
     "sessions": [
-      { "speakers": [{ "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }], "title": "Hybrid Apps - A good solution for mobile development!", "description": "Presentation and discussion of the basic principles of hybrid mobile development. What are the pros and cons? Come check it out!" },
-      { "speakers": [{ "slug": "iolanda-rosa", "name": "Iolanda Rosa" }], "title": "", "description": "" }
+      { "speakers": [{ "slug": "iolanda-rosa", "name": "Iolanda Rosa" }], "title": "", "description": "" },
+      { "speakers": [{ "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }], "title": "Hybrid Apps - A good solution for mobile development!", "description": "Presentation and discussion of the basic principles of hybrid mobile development. What are the pros and cons? Come check it out!" }      
     ],
     "links": [
       {
