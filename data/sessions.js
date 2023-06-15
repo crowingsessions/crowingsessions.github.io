@@ -9,7 +9,7 @@ var sessions = [
     "areas": ["Leiria", "Mobile apps", "Hybrid", "Cross-platform", "Framework", "Android", "iOS"],
     "description": "",
     "sessions": [
-      { "speakers": [{ "slug": "iolanda-rosa", "name": "Iolanda Rosa" }], "title": "", "description": "" },
+      { "speakers": [{ "slug": "iolanda-rosa", "name": "Iolanda Rosa" }], "title": "Mobile-First Development: Exploring the Pros and Cons", "description": "Comprehensive analysis of the potential benefits and drawbacks that arise when embracing a mobile-first development approach for crafting mobile applications that rely on data consumption from an API. The primary focus lies in uncovering the effectiveness of this strategy, while also acknowledging the challenges that may emerge along the implementation." },
       { "speakers": [{ "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }], "title": "Hybrid Apps - A good solution for mobile development!", "description": "Presentation and discussion of the basic principles of hybrid mobile development. What are the pros and cons? Come check it out!" }      
     ],
     "links": [
