@@ -73,7 +73,7 @@ var speakers = [
     "name": "Iolanda Rosa",
     "slug": "iolanda-rosa",
     "country": "pt",
-    "position": "",
+    "position": "Software Developer",
     "company": "VOID",
     "description": "",
     "contacts": [
