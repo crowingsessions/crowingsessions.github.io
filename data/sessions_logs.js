@@ -1,6 +1,31 @@
 
 var sessionsLogs = [
   {
+    "slug": "m-u-6",
+    "date": "2023-06-21",
+    "title": "Mobile Apps: Hybrid or native that's the question",
+    "speakers": [{ "slug": "iolanda-rosa", "name": "Iolanda Rosa" }, { "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }],
+    "description": `
+      <p>This session focus was mobile development and the speakers did a great job with their presentations, talks and were amazing because they also handled pretty well the fload of question and discussion that happen! It was awesome to feel the audiance engaged and excited with the subjects.</p>
+      <p>Iolanda Rosa, explored the pros and cons of going with the mobile-first development approach, highlighting some of the conseguences that could bring to the team, company and client, but also giving some good advecises for those who decided to go with it.</p>
+      <p>Rodrigo Sa Pessoa, spoke about Hybrid Mobile Apps development - why and when they can be a good solution to your project; and how and why they are evolving so fast. he start by exploring a little bit the differences about Native Vs Hybrid and finish the talk explaining enthusiastically the IONIC Framework and doing a simple showcase with it.</p>
+      <p>Just a simple quote by Tim O’Reilly "What new technology does is create new opportunities to do a job that customers want done."</p>
+      <p>Key points:<ul><li>Architecture</li><li>Backend</li><li>Mobile</li><li>Development</li></ul></p>
+    `,
+    "links": [
+      {
+        "url": "https://drive.google.com/file/d/1JfC45kRtXlUQ_at1DBXvxntb3EP7wqb7/view?usp=sharing",
+        "name": "Iolanda Roda's Presentation slides",
+        "type": "url"
+      },
+      {
+        "url": "https://drive.google.com/file/d/1KLVROCuVt0c_bzPKQdZrY6yz37ZkFds2/view?usp=sharing",
+        "name": "Celso's Presentation slides",
+        "type": "url"
+      }
+    ]
+  },
+  {
     "slug": "m-u-5",
     "date": "2023-05-03",
     "title": "Physics: computation and space",
