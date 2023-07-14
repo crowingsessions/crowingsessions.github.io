@@ -20,7 +20,7 @@ var sessionsLogs = [
       },
       {
         "url": "https://drive.google.com/file/d/1KLVROCuVt0c_bzPKQdZrY6yz37ZkFds2/view?usp=sharing",
-        "name": "Celso's Presentation slides",
+        "name": "Rodrigo's Presentation slides",
         "type": "url"
       }
     ]
