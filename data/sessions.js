@@ -13,6 +13,8 @@ var sessions = [
       { "speakers": [{ "slug": "rodrigo-sa-pessoa", "name": "Rodrigo Sá Pessoa" }], "title": "Hybrid Apps - A good solution for mobile development!", "description": "Presentation and discussion of the basic principles of hybrid mobile development. What are the pros and cons? Come check it out!" }      
     ],
     "links": [
+      /*
+      Keep just for history and occupy more internet space
       {
         "url": "https://www.eventbrite.com/e/crowing-sessions-mobile-apps-hybrid-or-native-thats-the-question-tickets-656692965337",
         "name": "Join us at the venue for some pizza, drinks and networking",
@@ -22,6 +24,10 @@ var sessions = [
         "url": "https://us06web.zoom.us/meeting/register/tZEsdOCqqzItHtM7sYXA-pLhA9NgZRyzOVte ",
         "name": "Join us in zoom, we start at 17h55 Lisbon (GMT +01:00)",
         "type": "url"
+      },*/
+      {
+        "name": "Crow review log",
+        "type": "log"
       }
     ],
     "sponsors": [
