@@ -7,8 +7,7 @@ html {
 }
 
 #landingBrandDiv {
-  height: 250px;
-  width: 250px;
+  width: 225px;
   opacity: 0;
 }
 
@@ -21,6 +20,11 @@ html {
   font-size: 50px;
   opacity: 0;
   text-align: center;
+  width: 350px;
+}
+
+#landingBrandLetteringDiv > img {
+  width: 100%;
 }
 
 .nav-bar--brand--div {
@@ -28,12 +32,10 @@ html {
 }
 
 .nav-bar--brand {
-  height: 50px;
   width: 50px;
 }
 
 .nav-bar--brand > img {
-  height: 100%;
   width: 100%;
 }
 
